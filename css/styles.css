@@ -1,0 +1,88 @@
+body {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 400;
+  min-height: 100vh;
+  position: relative;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.hide {
+  display: none !important;
+}
+
+#bg-menu {
+  width: 100%;
+  height: 100%;
+  background-color: hsla(0, 0%, 0%, .1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#header-logo {
+  width: auto;
+  height: 18px;
+}
+
+#nav-open-img {
+  width: 25px;
+  height: 18px;
+}
+
+#nav-close-img {
+  width: 21px;
+  height: 22px;
+  position: relative;
+  z-index: 5;
+}
+
+#list-header-menu {
+  position: absolute;
+  top: 5rem;
+  left: 1rem;
+  width: calc(100% - 2rem);
+  padding: 2rem;
+  background-color: hsl(0, 0%, 100%);
+  z-index: 10;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#list-header-menu > li {
+  margin-bottom: 2rem;
+}
+
+#list-header-menu > li:last-of-type {
+  margin-bottom: 0;
+}
+
+#list-header-menu > li > a {
+  font-weight: 500;
+  color: hsl(228, 39%, 23%);
+}
+
+main {
+  padding-top: 5rem;
+  background-image: url('../images/bg-tablet-pattern.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top -20px right -60px;
+}
+
+#hero-img {
+  display: block;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
