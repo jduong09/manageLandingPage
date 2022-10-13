@@ -242,7 +242,9 @@ main {
   padding: 5rem 0;
   background-color: hsl(12, 88%, 59%);
   text-align: center;
-  mask-image: url('../images/bg-tablet-pattern.svg');
+  background-image: url('../images/bg-simplify-section-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: top 40px left 0px;
 }
 
 .div-motto > h2 {
@@ -256,4 +258,89 @@ main {
   background-color: hsl(0, 0%, 100%);
   color: hsl(12, 88%, 59%);
   box-shadow: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0;
+  background-color: hsl(233, 12%, 13%);
+}
+
+#footer-logo {
+  order: 4;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.form-email {
+  order: 1;
+  width: 90%;
+  margin: 0 auto 3rem auto;
+  display: flex;
+}
+
+#input-email {
+  padding: .5rem 1.5rem;
+  border-radius: 500px;
+  flex: 1;
+  background-color: hsl(0, 0%, 100%);
+}
+
+#input-email::placeholder {
+  color: hsl(227, 12%, 61%);
+  font-size: .85rem;
+}
+
+#input-submit {
+  padding: .5rem 1.5rem;
+  border-radius: 500px;
+  margin-left: .5rem;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(12, 88%, 59%);
+  text-transform: uppercase;
+  font-size: .85rem;
+  cursor: pointer;
+}
+
+.list-footer-helpful-links {
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 150px;
+  width: 90%;
+  margin: 0 auto 1.5rem auto;
+}
+
+.list-footer-helpful-links > li {
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.list-footer-social-media {
+  order: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.item-social-media > svg {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.item-social-media > svg:hover > path {
+  fill: hsl(12, 88%, 59%);
+}
+
+#footer-copyright {
+  order: 5;
+  text-align: center;
+  font-size: 12px;
+  color: hsl(227, 12%, 61%);
 }
