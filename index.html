@@ -11,6 +11,7 @@
   <link rel="stylesheet" type="text/css" href="./css/reset.css">
   <link rel="stylesheet" type="text/css" href="./css/styles.css">
   <script type="text/javascript" src="./js/menu.js"></script>
+  <script type="text/javascript" src="./js/testimonials.js"></script>
   <title>Frontend Mentor | Manage landing page</title>
 </head>
 <body>
@@ -91,15 +92,15 @@
       <h3>What they've said</h3>
       <ul class="list-testimonials">
         <li class="item-testimonial">
-          <img id="img-user-testimonial" src="./images/avatar-anisha.png" alt="img of Anisha"/>
+          <img class="img-user-testimonial" src="./images/avatar-anisha.png" alt="img of Anisha"/>
           <h5>Anisha Li</h5>
           <div>
             “Manage has supercharged our team's workflow. The ability to maintain 
             visibility on larger milestones at all times keeps everyone motivated.”
           </div>
         </li>
-        <li class="item-testimonial">
-          <img id="img-user-testimonial" src="./images/avatar-ali.png" alt="img of ali"/>
+        <li class="item-testimonial hide">
+          <img class="img-user-testimonial" src="./images/avatar-ali.png" alt="img of ali"/>
           <h5>Ali Bravo</h5>
           <div>
             “We have been able to cancel so many other subscriptions since using 
@@ -107,16 +108,16 @@
             more focused.”
           </div>
         </li>
-        <li class="item-testimonial">
-          <img id="img-user-testimonial" src="./images/avatar-richard.png" alt="img of Richard"/>
+        <li class="item-testimonial hide">
+          <img class="img-user-testimonial" src="./images/avatar-richard.png" alt="img of Richard"/>
           <h5>Richard Watts</h5>
           <div>
             “Manage allows us to provide structure and process. It keeps us organized 
             and focused. I can't stop recommending them to everyone I talk to!”
           </div>
         </li>
-        <li class="item-testimonial">
-          <img id="img-user-testimonial" src="./images/avatar-shanai.png" alt="img of Shanai"/>
+        <li class="item-testimonial hide">
+          <img class="img-user-testimonial" src="./images/avatar-shanai.png" alt="img of Shanai"/>
           <h5>Shanai Gough</h5>
           <div>
             “Their software allows us to track, manage and collaborate on our projects 
@@ -124,11 +125,17 @@
           </div>
         </li>
       </ul>
-      <button class="button-get-started">Get Started</button>
+      <div id="div-btn-testimonials">
+        <button class="btn-testimonial active"></button>
+        <button class="btn-testimonial"></button>
+        <button class="btn-testimonial"></button>
+        <button class="btn-testimonial"></button>
+      </div>
+      <button class="btn-get-started">Get Started</button>
     </div>
     <div class="div-motto">
       <h2>Simplify how your team works today.</h2>
-      <button class="button-get-started">Get Started</button>
+      <button class="btn-get-started">Get Started</button>
     </div>
   </main>
   <footer>
