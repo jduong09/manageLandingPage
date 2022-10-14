@@ -366,3 +366,124 @@ footer {
   font-size: 12px;
   color: hsl(227, 12%, 61%);
 }
+
+@media (min-width: 576px) {
+  #hero-img {
+    width: 70%;
+  }
+
+  .div-hero > div > h2 {
+    width: 80%;
+    margin: 1rem auto;
+  }
+
+  .div-hero > div > div, .div-what-different > div, .div-motto > h2 {
+    width: 70%;
+  }
+
+  .div-what-different > h3 {
+    width: 50%;
+  }
+
+  .item-testimonial > div {
+    width: 75%;
+  }
+
+  .form-email, .list-footer-helpful-links {
+    width: 80%;
+  }
+
+  .list-footer-social-media {
+    width: 60%;
+  }
+}
+
+@media (min-width: 767px) {
+  #hero-img {
+    width: 60%;
+  }
+
+  .div-hero > div > div {
+    width: 70%;
+  }
+
+  .div-hero > div > div, .div-what-different > div, .div-motto > h2 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 922px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .div-hero {
+    display: flex;
+    padding: 6rem 3rem;
+  }
+
+  #hero-img {
+    order: 2;
+    width: 50%;
+  }
+
+  .div-hero > div {
+    order: 1;
+    text-align: start;
+  }
+
+  .div-hero > div > h2 {
+    width: auto;
+    margin: 2rem 0;
+  }
+
+  .div-hero > div > div {
+    width: 75%;
+    margin: 0;
+  }
+
+  .btn-get-started {
+    margin: 2rem 0;
+  }
+
+  .div-what-different {
+    flex: 2;
+    text-align: start;
+    padding-left: 3rem;
+  }
+
+  .div-what-different > h3 {
+    font-size: 2rem;
+    width: auto;
+    margin-bottom: 2rem;
+  }
+
+  .div-what-different > div {
+    margin: 0;
+    width: 85%;
+  }
+
+  .div-features {
+    flex: 2;
+    padding-right: 3rem;
+  }
+
+  .item-feature-header {
+    background-color: transparent;
+  }
+
+  .item-feature-description {
+    padding-left: 6rem;
+  }
+
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1400px) {
+
+}
