@@ -477,11 +477,93 @@ footer {
     padding-left: 6rem;
   }
 
+  .item-testimonial > div {
+    width: 40%;
+  }
 
+  .div-motto {
+    padding: 5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    flex: 1;
+  }
+
+  .div-motto > h2 {
+    margin: 0;
+  }
+
+  .form-email, .list-footer-helpful-links {
+    width: 60%;
+  }
+
+  .list-footer-social-media {
+    width: 35%;
+  }
 }
 
 @media (min-width: 1200px) {
+  header {
+    padding: 3rem 6rem;
+    align-items: center;
+  }
 
+  nav {
+    width: 40%;
+  }
+
+  #list-header-menu {
+    position: initial;
+    top: initial;
+    left: initial;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    width: auto;
+    z-index: auto;
+    background-color: initial;
+    border-radius: initial;
+    text-align: start;
+  }
+
+  #list-header-menu > li {
+    margin: 0;
+  }
+
+  header > .btn-get-started {
+    margin: 0;
+  }
+
+  .div-hero {
+    padding: 9rem 6rem 6rem 6rem;
+  }
+
+  #hero-img {
+    width: 45%;
+  }
+
+  .div-hero > div > h2 {
+    width: 80%;
+    font-size: 2.75rem;
+  }
+
+  .div-hero > div > div {
+    width: 70%;
+  }
+
+  .div-what-different {
+    padding-left: 6rem;
+  }
+
+  .div-what-different > h3 {
+    width: 75%;
+    margin: 0 0 2rem 0;
+  }
+
+  .div-what-different > div {
+    width: 70%;
+  }
 }
 
 @media (min-width: 1400px) {
