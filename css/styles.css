@@ -477,6 +477,10 @@ footer {
     padding-left: 6rem;
   }
 
+  .div-testimonials {
+    width: 100%;
+  }
+
   .item-testimonial > div {
     width: 40%;
   }
@@ -563,6 +567,28 @@ footer {
 
   .div-what-different > div {
     width: 70%;
+  }
+
+  .div-testimonials {
+    width: auto;
+    overflow: hidden;
+    margin-left: -1rem;
+  }
+
+  .list-testimonials {
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .item-testimonial {
+    display: inline-block;
+    width: 35%;
+  }
+
+  .item-testimonial > div {
+    width: 75%;
+    white-space: initial;
   }
 }
 

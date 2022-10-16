@@ -32,8 +32,27 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         itemTestimonials[k].classList.add('hide');
       }
+      divBtnTestimonials.classList.remove('hide');
     }
 
     currentTestimonialIdx = 0;
   }
+
+  window.addEventListener('resize', () => {
+    for (let k = 0; k < itemTestimonials.length; k++) {
+      if (innerWidth >= 1200) {
+        itemTestimonials[k].classList.remove('hide');
+        divBtnTestimonials.classList.add('hide');
+      } else {
+        if (k === 0) {
+          itemTestimonials[k].classList.remove('hide');
+        } else {
+          itemTestimonials[k].classList.add('hide');
+        }
+        divBtnTestimonials.classList.remove('hide');
+      }
+  
+      currentTestimonialIdx = 0;
+    }
+  })
 });
