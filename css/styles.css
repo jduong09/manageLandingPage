@@ -368,6 +368,16 @@ footer {
 }
 
 @media (min-width: 576px) {
+  main {
+    background-size: 97%;
+    background-position: top -200px right -100px;
+  }
+
+  .div-hero {
+    background-size: 70%;
+    background-position: bottom 0px right -170px;
+  }
+
   #hero-img {
     width: 70%;
   }
@@ -389,6 +399,11 @@ footer {
     width: 75%;
   }
 
+  .div-motto {
+    background-size: 14%;
+    background-position: top 30px left 0px;
+  }
+
   .form-email, .list-footer-helpful-links {
     width: 80%;
   }
@@ -399,6 +414,16 @@ footer {
 }
 
 @media (min-width: 767px) {
+  main {
+    background-size: 85%;
+    background-position: top -250px right -100px;
+  }
+
+  .div-hero {
+    background-size: 60%;
+    background-position: bottom 0px right -200px;
+  }
+
   #hero-img {
     width: 60%;
   }
@@ -417,10 +442,13 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    background-size: 60%;
+    background-position: top -115px right -125px;
   }
   .div-hero {
     display: flex;
     padding: 6rem 3rem;
+    background: none;
   }
 
   #hero-img {
@@ -451,6 +479,10 @@ footer {
     flex: 2;
     text-align: start;
     padding-left: 3rem;
+    background-image: url('../images/bg-tablet-pattern.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom -100px left -250px;
   }
 
   .div-what-different > h3 {
@@ -486,11 +518,14 @@ footer {
   }
 
   .div-motto {
-    padding: 5rem 3rem;
+    padding: 3rem;
     display: flex;
     justify-content: space-between;
     text-align: start;
     flex: 1;
+    background-image: url('../images/bg-simplify-section-desktop.svg');
+    background-size: 115%;
+    background-position: top -65px right -200px;
   }
 
   .div-motto > h2 {
@@ -507,6 +542,11 @@ footer {
 }
 
 @media (min-width: 1200px) {
+  main {
+    background-size: 55%;
+    background-position: top -175px right -175px;
+  }
+
   header {
     padding: 3rem 6rem;
     align-items: center;
@@ -558,6 +598,8 @@ footer {
 
   .div-what-different {
     padding-left: 6rem;
+    background-size: 75%;
+    background-position: bottom -200px left -250px;
   }
 
   .div-what-different > h3 {
@@ -593,5 +635,31 @@ footer {
 }
 
 @media (min-width: 1400px) {
+  main {
+    background-size: 50%;
+    background-position: top -175px right -120px;
+  }
+  header {
+    padding: 3rem 9rem;
+  }
 
+  .div-hero {
+    padding: 9rem 9rem 6rem 9rem;
+  }
+
+  .div-what-different {
+    padding-left: 9rem;
+    background-size: 60%;
+    background-position: bottom -150px left -175px;
+  }
+
+  .div-features {
+    padding-right: 9rem;
+  }
+
+  .div-motto {
+    padding: 3rem 9rem;
+    background-size: 85%;
+    background-position: top -100px right -200px;
+  }
 }
