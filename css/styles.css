@@ -442,8 +442,10 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-size: 60%;
-    background-position: top -115px right -125px;
+    background-image: url('../images/bg-tablet-pattern.svg'), url('../images/bg-tablet-pattern.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-size: 60%, 60%;
+    background-position: top -115px right -125px, bottom 400px left -250px;
   }
   .div-hero {
     display: flex;
@@ -479,10 +481,6 @@ footer {
     flex: 2;
     text-align: start;
     padding-left: 3rem;
-    background-image: url('../images/bg-tablet-pattern.svg');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: bottom -100px left -250px;
   }
 
   .div-what-different > h3 {
@@ -543,8 +541,8 @@ footer {
 
 @media (min-width: 1200px) {
   main {
-    background-size: 55%;
-    background-position: top -175px right -175px;
+    background-size: 55%, 55%;
+    background-position: top -175px right -175px, bottom 375px left -350px;
   }
 
   header {
@@ -598,8 +596,7 @@ footer {
 
   .div-what-different {
     padding-left: 6rem;
-    background-size: 75%;
-    background-position: bottom -200px left -250px;
+    padding-bottom: 6rem;
   }
 
   .div-what-different > h3 {
@@ -611,21 +608,26 @@ footer {
     width: 70%;
   }
 
+  .div-features {
+    padding-bottom: 6rem;
+  }
+
   .div-testimonials {
     width: auto;
     overflow: hidden;
-    margin-left: -1rem;
   }
 
   .list-testimonials {
-    width: auto;
+    width: 200%;
     overflow: hidden;
     white-space: nowrap;
+    position: relative;
+    left: -10%;
   }
 
   .item-testimonial {
     display: inline-block;
-    width: 35%;
+    width: 20%; /* 8 testimonials, width of list is 150% */
   }
 
   .item-testimonial > div {
@@ -636,8 +638,8 @@ footer {
 
 @media (min-width: 1400px) {
   main {
-    background-size: 50%;
-    background-position: top -175px right -120px;
+    background-size: 50%, 50%;
+    background-position: top -175px right -120px, bottom 250px left -450px;
   }
   header {
     padding: 3rem 9rem;
@@ -649,8 +651,6 @@ footer {
 
   .div-what-different {
     padding-left: 9rem;
-    background-size: 60%;
-    background-position: bottom -150px left -175px;
   }
 
   .div-features {

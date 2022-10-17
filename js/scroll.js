@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const listTestimonials = document.querySelector('.list-testimonials');
+  const itemTestimonials = document.getElementsByClassName('item-testimonial');
   listTestimonials.offsetLeft = 30;
   let isDown = false;
   let startX;
@@ -8,6 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
   listTestimonials.addEventListener('mousedown', (e) => {
     if (innerWidth >= 1200) {
       isDown = true;
+
+      listTestimonials.classList.add('active');
 
       startX = e.pageX - listTestimonials.offsetLeft;
       scrollLeft = listTestimonials.scrollLeft;
@@ -36,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (innerWidth >= 1200) {
       e.preventDefault();
       const x = e.pageX - listTestimonials.offsetLeft;
-      const walk = (x - startX) * 5;
+      const walk = (x - startX);
       listTestimonials.scrollLeft = scrollLeft - walk;
     }
   });
